@@ -9,12 +9,14 @@
 ## 部署到 Vercel（推荐）
 
 方法一：GitHub 仓库导入
+
 - 新建一个 GitHub 仓库，将本目录全部文件提交（`index.html`, `styles.css`, `script.js`, `public/`, `vercel.json`, `README.md`, `PROMPTS.md`）。
 - 打开 Vercel 控制台，选择 `Add New Project -> Import Git Repository`，选择你的仓库。
 - Framework 选择 `Other`（静态站点），Build/Output 维持默认（无构建步骤，静态文件）。
 - 部署完成后会得到你的线上网址（如 `https://你的项目名.vercel.app`）。
 
 方法二：直接上传
+
 - 在 Vercel 控制台选择 `Add New Project -> ... -> Deploy`，上传本目录所有文件。
 - 部署完成后同样会得到线上网址。
 
@@ -25,6 +27,7 @@
 - Vercel 控制台截图：Project 概览页或 Deployments 成功状态截图。
 
 你可以将截图放到 `submission/` 目录（需要你本地新建并放入 PNG/JPG），例如：
+
 - `submission/local-preview.png`
 - `submission/vercel-live.png`
 - `submission/vercel-dashboard.png`
@@ -52,5 +55,3 @@
 ## 许可证
 
 MIT
-
-
