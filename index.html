@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>我的个人网站</title>
+    <meta
+      name="description"
+      content="一个用 AI Coding IDE 创建并部署到 Vercel 的个人网站" />
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">MySite</a>
+        <nav class="nav">
+          <a href="#about">关于</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+          <button id="theme-toggle" aria-label="切换主题">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>你好，我是<span class="accent">某某</span></h1>
+          <p>
+            全栈开发者 / AI 爱好者。这个网站由 AI Coding 的 IDE 生成，并部署到
+            Vercel。
+          </p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn" href="#contact">联系我</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img
+            src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+            alt="头像"
+            width="160"
+            height="160" />
+        </div>
+      </section>
+
+      <section id="about" class="card">
+        <h2>关于我</h2>
+        <p>
+          专注于构建可靠、可维护的 Web 应用。喜欢使用
+          TypeScript、Node.js、React，也在探索 LLM 与智能体应用。
+        </p>
+        <ul class="skills">
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Python</li>
+          <li>LLM/AI</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>项目</h2>
+        <div class="grid">
+          <article class="project card">
+            <h3>个人网站</h3>
+            <p>当前站点源码，静态部署，加载迅速，支持深浅色主题。</p>
+            <div class="links">
+              <a target="_blank" rel="noreferrer" href="https://vercel.com"
+                >部署平台</a
+              >
+            </div>
+          </article>
+          <article class="project card">
+            <h3>示例应用</h3>
+            <p>占位示例：未来可放置你的真实项目链接与说明。</p>
+            <div class="links">
+              <a href="#contact">合作洽谈</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>联系我</h2>
+        <p>欢迎通过以下方式联系：</p>
+        <ul>
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>
+            GitHub:
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/yourname"
+              >@yourname</a
+            >
+          </li>
+        </ul>
+        <form id="contact-form" class="contact-form" onsubmit="return false;">
+          <label>
+            你的邮箱
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required />
+          </label>
+          <label>
+            留言
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="想和我聊点什么？"
+              required></textarea>
+          </label>
+          <button class="btn primary" id="send-btn">发送（本地演示）</button>
+          <p id="form-tip" class="tip" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> 某某. 由 AI Coding IDE 构建 · 部署到 Vercel
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
